@@ -173,7 +173,7 @@
             </section>
 
             <footer class="text-center">
-                <p>&copy; <?php echo date('Y'); ?> Rubanraj S. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Rubanraj S. All rights reserved.</p>
             </footer>
         </div>
     </div>
