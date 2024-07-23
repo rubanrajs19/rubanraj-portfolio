@@ -1,0 +1,380 @@
+/* Sidebar active link */
+.sidebar-nav ul li a.active {
+    background: #29930c;
+}
+
+/* Sidebar sticky class */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 250px; /* Ensure this matches the sidebar width */
+    z-index: 1000;
+}
+
+/* General Styles */
+body {
+/*    font-family: 'Arial', sans-serif;*/
+    font-family: 'Clash Grotesk', sans-serif;
+
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+p{
+  font-size: 1.2em;
+}
+.contact_a{
+    color: #fff;
+    text-decoration: none;
+}
+.main-header {
+    padding: 20px;
+    background: #1f1f1f;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #29930c;
+}
+
+.main-content {
+    display: flex;
+}
+
+.sidebar-nav {
+    background: #1f1f1f;
+    width: 250px;
+    padding: 20px 0;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+    background: #29930c;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    animation: fadeIn 3s;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    float: right;
+    margin-left: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.5s;
+}
+
+/* Sections */
+section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #29930c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s;
+}
+
+.about-me, .contact, .skills, .work-experience {
+    margin-bottom: 40px;
+}
+
+.about-me .about-content {
+    overflow: hidden;
+}
+
+.about-me .btn, .contact .btn, .form-group .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #29930c;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cus-contact{
+    background: #ff000000 !important;
+    border: 1px solid #29930c !important;
+    border-radius: 6px;
+    margin-left: 1rem;
+}
+.cus-contact:hover{
+    background-color: #29930c !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+
+.about-me .btn:hover, .contact .btn:hover, .form-group .btn:hover {
+    background-color: #ffffff;
+    border-color: #29930c ;
+    color: #000;
+}
+
+
+/* Contact */
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact i {
+    color: #29930c;
+    margin-right: 10px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 45%;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    color: #29930c;
+    border-bottom: 2px solid #29930c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill i {
+    color: #29930c;
+    margin-right: 10px;
+}
+
+/* Work Experience */
+.work-experience .work {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s;
+    box-shadow: 0px 0px 50px 0px #29930c40;
+}
+
+.work h3 {
+    color: #29930c;
+    margin-bottom:0.5rem;
+    font-size: 1.6rem;
+}
+.work h2 {
+    color: #29930c;
+    font-size: 1.5rem;
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.work h4 {
+    color: #cccccc;
+    margin-bottom: 10px;
+    margin-top:0rem;
+    font-size: 1.5rem;
+}
+
+/* Education */
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #29930c;
+    outline: none;
+}
+
+.form-group .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #29930c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-group .btn:hover {
+    background-color: #e68900;
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Typewriter effect */
+#typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #29930c;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #29930c; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar-nav ul {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .sidebar-nav ul li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}
